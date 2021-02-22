@@ -1,0 +1,12 @@
+<html>
+<body bgcolor=#1111f0>
+<p>
+From File:
+</p>
+<hr>
+<p>
+<b>Hello Bold!</b> Hello World! <font color=#f01111>Hello Red!</font>
+<br>Hello NewLine!<a href="localhost:8080/about">AoutPage</a>
+</p>
+</body>
+</html>
