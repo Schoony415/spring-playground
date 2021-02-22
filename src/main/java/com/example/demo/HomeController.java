@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 //trying to make a 404 page
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -11,7 +12,7 @@ public class HomeController {
     public String home(){
         String mystring = "Default: Hello World!";
         //path to file on my computer without the file name
-        String path = "/Users/j2153034/Documents/GitHub/Spring-playground/src/main/java/com/example/demo";
+        String path = "/Users/j2153034/Documents/GitHub/spring-playground/src/main/java/com/example/demo";
         //just my file name with the leading slash
         String filename = "/TestText.txt";
         mystring = FileManager.readFileAsString(path+filename);
@@ -19,6 +20,19 @@ public class HomeController {
         return mystring;
         //return "Hello Baby";
     }
+
+
+    @GetMapping("/tasks")
+    public String getTasks() {
+        return "These are tasks";
+    }
+    @GetMapping("/math/pi")
+    public String getPi() {
+        return "3.141592653589793";
+    }
+
+
+
     @GetMapping("/about")
     public String about(){
         return "About page";

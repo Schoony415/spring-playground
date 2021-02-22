@@ -6,7 +6,7 @@ From File:
 <hr>
 <p>
 <b>Hello Bold!</b> Hello World! <font color=#f01111>Hello Red!</font>
-<br>Hello NewLine!<a href="localhost:8080/about">AoutPage</a>
+<br>Hello NewLine!<a href="localhost:8080/about">AoutPage</a> In new setting
 </p>
 </body>
 </html>
