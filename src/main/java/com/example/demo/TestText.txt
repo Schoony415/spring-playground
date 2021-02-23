@@ -1,12 +1,36 @@
 <html>
-<body bgcolor=#1111f0>
+<body bgcolor=#2151f0>
 <p>
 From File:
 </p>
 <hr>
 <p>
 <b>Hello Bold!</b> Hello World! <font color=#f01111>Hello Red!</font>
-<br>Hello NewLine!<a href="localhost:8080/about">AoutPage</a> In new setting
+<br>Hello NewLine!
+<br><a href="localhost:8080/about">AoutPage</a> Links dont work for local host :/
 </p>
+
+<ul>
+<li> / </li>
+<li> /tasks </li>
+<li> /about (/a) </li>
+<li> /app
+<ul><li> / </li>
+    <li> /foo </li>
+    <li> /bar </li>
+    <li> /123 </li></ul>
+<li> /lost?item=String </li>
+<li> /animal </li>
+<ul><li> /?a=String&i=number </li>
+    <li> /# </li>
+    <li> /#/socks </li></ul>
+<li> /math <li>
+<ul><li> / </li>
+    <li> /pi </li>
+    <li> /calculate things go here </li></ul>
+
+</ul>
+
+
 </body>
 </html>

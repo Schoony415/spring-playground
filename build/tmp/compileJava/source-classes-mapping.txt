@@ -2,7 +2,15 @@ com/example/demo/FileManager.java
  com.example.demo.FileManager
 com/example/demo/DemoApplication.java
  com.example.demo.DemoApplication
-com/example/demo/HomeController.java
- com.example.demo.HomeController
 com/example/demo/AppPages.java
  com.example.demo.AppPages
+com/example/demo/Animals.java
+ com.example.demo.Animals
+com/example/demo/HomeController.java
+ com.example.demo.HomeController
+com/example/demo/Calculator.java
+ com.example.demo.Calculator
+ com.example.demo.Calculator$1
+ com.example.demo.Calculator$operators
+com/example/demo/MathService.java
+ com.example.demo.MathService

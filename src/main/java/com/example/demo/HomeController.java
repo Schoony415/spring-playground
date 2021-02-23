@@ -1,15 +1,15 @@
 package com.example.demo;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-//trying to make a 404 page
-import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.*;
+
 
 @RestController
 public class HomeController {
+    private int viewcount=0;
     @GetMapping("/")
     public String home(){
+        viewcount++;
+        System.out.println("Dear Diary: Look mom! Got a view!:"+viewcount);
         String mystring = "Default: Hello World!";
         //path to file on my computer without the file name
         String path = "/Users/j2153034/Documents/GitHub/spring-playground/src/main/java/com/example/demo";
@@ -26,10 +26,6 @@ public class HomeController {
     public String getTasks() {
         return "These are tasks";
     }
-    @GetMapping("/math/pi")
-    public String getPi() {
-        return "3.141592653589793";
-    }
 
 
 
@@ -45,4 +41,12 @@ public class HomeController {
     public String error(){
         return "THIS IS MY 404 PAGE, GET WRECKED NOOB!";
     }
+
+    //for one item query
+    //lost?item=String
+    @GetMapping("/lost")
+    public String foundThem(@RequestParam String item){
+        return "I found your "+item+".";
+    }
+
 }
