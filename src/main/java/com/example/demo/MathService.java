@@ -1,9 +1,6 @@
 package com.example.demo;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,6 +18,7 @@ public class MathService {
                 "<br>.    operation=*&x=*&y=*" +
                 "<br>.    numbers=*,*" +
                 "<br><br>/pi" +
+                "<br>/volume/*/*/*"+
                 "</p></body></html>");
     }
     @RequestMapping("/pi")
@@ -68,6 +66,14 @@ public class MathService {
                 +args.toString()+" </td></tr><tr><td>Outputs</td><td nowrap> "
                 +mycalc.toString()+" </td></tr></table></body></html>");
         //return ("<table><tr> %s </tr><tr> %s </tr></table>",args.toString(),mycalc.toString());
+    }
+
+    @GetMapping("/volume/{x}/{y}/{z}")
+    public String cubicVolume(@PathVariable String x,@PathVariable String y,@PathVariable String z){
+        //The volume of a 6x7x8 rectangle is 336
+        return ("The volume of a "+x+"x"+y+"x"+z+" rectangle is "+
+                (int)(Float.parseFloat(x)*Float.parseFloat(y)*Float.parseFloat(z))
+                );
     }
 
 }
