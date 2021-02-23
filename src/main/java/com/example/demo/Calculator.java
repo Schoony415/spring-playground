@@ -2,13 +2,23 @@ package com.example.demo;
 
 public class Calculator {
     public enum operators{
-        add, subtract, multiply, divide, modulo, exponential
+        add, subtract, multiply, divide, modulo, exponential;
+        /*public String toString(){
+            switch (){
+                case add: return "+";
+                case subtract: return "-";
+                case multiply: return "*";
+                case divide: return "/";
+                case modulo: return "%";
+                case exponential: return "^";
+                default: return "_";
+        }//*/
     }
     private float[] numbers;
     private operators operator;
     private float evaluated;
     public Calculator(operators op, float[] num){
-        System.out.println("constructor, argsin:"+op+num.toString());
+        //System.out.println("constructor, argsin:"+op+num.toString());
         this.operator=op;
         //doing a deep copy
         this.numbers=new float[num.length];
@@ -67,7 +77,7 @@ public class Calculator {
                 evaluated=(float)Math.pow(evaluated,numbers[numbers.length-1]);
                 break;
         }
-        System.out.println("evaluated: "+evaluated);
+        //System.out.println("evaluated: "+evaluated);
     }
     public String toString(){
         String tempstr="";
@@ -76,7 +86,7 @@ public class Calculator {
             tempstr+=(""+numbers[i]+opString(this.operator));
         tempstr+=(""+numbers[numbers.length-1]);
         tempstr+=(" = "+evaluated);
-        System.out.println("toString:"+tempstr);
+        //System.out.println("toString:"+tempstr);
         return tempstr;
     }
 

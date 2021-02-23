@@ -14,7 +14,14 @@ import java.util.HashMap;
 public class MathService {
     @GetMapping("/")
     public String mathHome(){
-        return "calculate?\noperation=*&numbers=*,*,*\nor operation=*&x=*&y=*\nor numbers=*";
+        return ("<html><body><p>" +
+                "Current operators: add,subtract,multiply,divide,modulo,exponential" +
+                "<br>calculate?" +
+                "<br>.    operation=*&numbers=*,*,*" +
+                "<br>.    operation=*&x=*&y=*" +
+                "<br>.    numbers=*,*" +
+                "<br><br>/pi" +
+                "</p></body></html>");
     }
     @RequestMapping("/pi")
     public String RequestPi() {
@@ -57,7 +64,9 @@ public class MathService {
         }
 
         //return (""+args.toString()+":"+mycalc.toString());
-        return ("<html><body><table border=1><tr><td>Inputs</td><td nowrap> "+args.toString()+" </td></tr><tr><td>Outputs</td><td nowrap> "+mycalc.toString()+" </td></tr></table></body></html>");
+        return ("<html><body><table border=1><tr><td>Inputs</td><td nowrap> "
+                +args.toString()+" </td></tr><tr><td>Outputs</td><td nowrap> "
+                +mycalc.toString()+" </td></tr></table></body></html>");
         //return ("<table><tr> %s </tr><tr> %s </tr></table>",args.toString(),mycalc.toString());
     }
 

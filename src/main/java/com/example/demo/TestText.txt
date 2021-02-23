@@ -24,10 +24,10 @@ From File:
 <ul><li> /?a=String&i=number </li>
     <li> /# </li>
     <li> /#/socks </li></ul>
-<li> /math <li>
+<li> /math </li>
 <ul><li> / </li>
     <li> /pi </li>
-    <li> /calculate things go here </li></ul>
+    <li> /calculate *see math/ for options </li></ul>
 
 </ul>
 
