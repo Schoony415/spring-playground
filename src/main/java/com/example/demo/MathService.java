@@ -2,9 +2,8 @@ package com.example.demo;
 
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Locale;
 
 @RestController
 @RequestMapping("/math")
@@ -12,18 +11,20 @@ public class MathService {
     @GetMapping("/")
     public String mathHome(){
         return ("<html><body><p>" +
-                "Current operators: add,subtract,multiply,divide,modulo,exponential" +
-                "<br>calculate?" +
-                "<br>.    operation=*&numbers=*,*,*" +
-                "<br>.    operation=*&x=*&y=*" +
-                "<br>.    numbers=*,*" +
+                "All numbers calculated as floats" +
+                "<br>Current operators: add,subtract,multiply,divide,modulo,exponential" +
+                "<br>calculator?" +
+                "<br>&nbsp;&nbsp;&nbsp;operator=*&numbers=*,*,*" +
+                "<br>&nbsp;&nbsp;&nbsp;operator=*&x=*&y=*" +
+                "<br>&nbsp;&nbsp;&nbsp;numbers=*,*" +
                 "<br><br>/pi" +
-                "<br>/volume/*/*/*"+
+                "<br>/volume/*/*/*" +
                 "</p></body></html>");
     }
     @RequestMapping("/pi")
-    public String RequestPi() {
-        return "3.141592653589793";
+    public String RequestPi(){
+        return ""+Math.PI;
+        //return "3.141592653589793";
     }
 
     @GetMapping("/calculator")
@@ -44,10 +45,23 @@ public class MathService {
             tempnums=new float[2];
             tempnums[0] = Float.parseFloat(args.get("x"));
             tempnums[1] = Float.parseFloat(args.get("y"));
+            // */
+            /* //trying to make it take any number of args like x y z
+            if(args.containsKey("operator")){
+                tempnums=new float[args.size()-1];
+                for(int i = 1, i<args.size(); i++)
+                    //tempnums[i-1]=Float.parseFloat(args.);
+            }// */
+
         }
 
         //creating the calculator
         if(args.containsKey("operator")){
+            //i shouldn't need this switch state, i should be able to turn the string directly into the enum
+            //valueof does replace the switch statement, but if something goes wrong idk what'll happen
+            //without a default case, any wrong spelling gets to error page
+            mycalc = new Calculator(Calculator.operators.valueOf(args.get("operator").toLowerCase()),tempnums);
+            /*
             switch (args.get("operator").toLowerCase()){
                 case "add": mycalc = new Calculator(Calculator.operators.add, tempnums);break;
                 case "subtract": mycalc = new Calculator(Calculator.operators.subtract, tempnums);break;
@@ -56,22 +70,23 @@ public class MathService {
                 case "modulo": mycalc = new Calculator(Calculator.operators.modulo, tempnums);break;
                 case "exponential": mycalc = new Calculator(Calculator.operators.exponential,tempnums);break;
                 default: mycalc=new Calculator(tempnums);break;
-            }
+            }//*/
         }else{
             mycalc= new Calculator(tempnums);
         }
 
         //return (""+args.toString()+":"+mycalc.toString());
-        return ("<html><body><table border=1><tr><td>Inputs</td><td nowrap> "
-                +args.toString()+" </td></tr><tr><td>Outputs</td><td nowrap> "
-                +mycalc.toString()+" </td></tr></table></body></html>");
+        return ("<html><body><table border=1><tr><td>Inputs</td><td nowrap> " +
+                args.toString()+" </td></tr><tr><td>Outputs</td><td nowrap> " +
+                mycalc.toString()+" </td></tr></table></body></html>"
+                );
         //return ("<table><tr> %s </tr><tr> %s </tr></table>",args.toString(),mycalc.toString());
     }
 
     @GetMapping("/volume/{x}/{y}/{z}")
     public String cubicVolume(@PathVariable String x,@PathVariable String y,@PathVariable String z){
         //The volume of a 6x7x8 rectangle is 336
-        return ("The volume of a "+x+"x"+y+"x"+z+" rectangle is "+
+        return ("The volume of a "+x+"x"+y+"x"+z+" rectangle is " +
                 (int)(Float.parseFloat(x)*Float.parseFloat(y)*Float.parseFloat(z))
                 );
     }

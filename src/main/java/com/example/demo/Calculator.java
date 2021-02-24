@@ -2,20 +2,23 @@ package com.example.demo;
 
 public class Calculator {
     public enum operators{
-        add, subtract, multiply, divide, modulo, exponential;
-        /*public String toString(){
-            switch (){
-                case add: return "+";
-                case subtract: return "-";
-                case multiply: return "*";
-                case divide: return "/";
-                case modulo: return "%";
-                case exponential: return "^";
-                default: return "_";
-        }//*/
-    }
+        add("+"),
+        subtract("-"),
+        multiply("*"),
+        divide("/"),
+        modulo("%"),
+        exponential("^")
+        ;
+        private String mysymbol;
+        private operators(String setstr){
+            this.mysymbol=setstr;
+        }
+        public String toString(){
+            return mysymbol;
+        }
+    }//end of enum
     private float[] numbers;
-    private operators operator;
+    private operators operator=operators.add;//default should help in problem cases
     private float evaluated;
     public Calculator(operators op, float[] num){
         //System.out.println("constructor, argsin:"+op+num.toString());
@@ -29,7 +32,8 @@ public class Calculator {
     public Calculator(float[] num){
         this(operators.add,num);
     }
-    private String opString(operators op){
+    //this was replaced by tostring in enum
+    /*private String opString(operators op){
         switch (op){
             case add: return "+";
             case subtract: return "-";
@@ -39,7 +43,7 @@ public class Calculator {
             case exponential: return "^";
             default: return "_";
         }
-    }
+    }*/
     private void Evaluate(){
         switch (operator){
             case add:
@@ -83,7 +87,8 @@ public class Calculator {
         String tempstr="";
         //should work out for multiple numbers
         for(int i = 0; i<numbers.length-1;i++)
-            tempstr+=(""+numbers[i]+opString(this.operator));
+            //tempstr+=(""+numbers[i]+opString(this.operator));//using old method
+            tempstr+=(""+numbers[i]+this.operator);//using new enum tostring
         tempstr+=(""+numbers[numbers.length-1]);
         tempstr+=(" = "+evaluated);
         //System.out.println("toString:"+tempstr);
@@ -91,4 +96,4 @@ public class Calculator {
     }
 
 
-}
+}//end of file

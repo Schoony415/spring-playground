@@ -2,7 +2,6 @@ package com.example.demo;
 
 import org.springframework.web.bind.annotation.*;
 
-
 @RestController
 public class HomeController {
     private int viewcount=0;
@@ -21,13 +20,17 @@ public class HomeController {
         //return "Hello Baby";
     }
 
-
     @GetMapping("/tasks")
     public String getTasks() {
         return "These are tasks";
     }
 
-
+    //for one item query
+    //lost?item=String
+    @GetMapping("/lost")
+    public String foundThem(@RequestParam String item){
+        return "I found your "+item+".";
+    }
 
     @GetMapping("/about")
     public String about(){
@@ -36,17 +39,11 @@ public class HomeController {
     @GetMapping("/a")//trying to make two things goto 1 page
     public String about2(){return about();}
 
+    //not working yet, need more research to make an awesome 404 page
     //@GetMapping("/error")
     //@ExceptionHandler
     public String error(){
         return "THIS IS MY 404 PAGE, GET WRECKED NOOB!";
-    }
-
-    //for one item query
-    //lost?item=String
-    @GetMapping("/lost")
-    public String foundThem(@RequestParam String item){
-        return "I found your "+item+".";
     }
 
 }

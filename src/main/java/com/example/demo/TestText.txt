@@ -7,19 +7,19 @@ From File:
 <p>
 <b>Hello Bold!</b> Hello World! <font color=#f01111>Hello Red!</font>
 <br>Hello NewLine!
-<br><a href="localhost:8080/about">AoutPage</a> Links dont work for local host :/
+<br><a href="localhost:8080/about">AboutPage</a> Links don't work for local host :/
 </p>
 
 <ul>
 <li> / </li>
 <li> /tasks </li>
+<li> /lost?item=String </li>
 <li> /about (/a) </li>
 <li> /app
 <ul><li> / </li>
     <li> /foo </li>
     <li> /bar </li>
     <li> /123 </li></ul>
-<li> /lost?item=String </li>
 <li> /animal </li>
 <ul><li> /?a=String&i=number </li>
     <li> /# </li>
