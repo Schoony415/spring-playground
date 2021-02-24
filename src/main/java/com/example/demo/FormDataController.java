@@ -1,6 +1,6 @@
 package com.example.demo;
 
-import com.galvanize.RequestObjects.Search;
+//import com.galvanize.RequestObjects.Search;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,10 +21,10 @@ public class FormDataController {
         return formData.toString();
     }
 
-    @PostMapping(value = "/object-example", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
-    public String getObjectParams(Search search) {
-        return search.toString();
-    }
+    //@PostMapping(value = "/object-example", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
+    //public String getObjectParams(Search search) {
+    //    return search.toString();
+    //}
 
     @PostMapping("/string-example")
     public String getRawString(@RequestBody String rawBody) {

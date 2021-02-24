@@ -1,8 +1,8 @@
 package com.example.demo;
 
 public class Calculator {
-    //this is old enum, I made it it's own file
-    /*public enum Operators{
+    /* //this is old enum, I made it it's own file
+    public enum Operators{
         add,subtract,multiply,divide,modulo,exponential
     }//*/
     private float[] numbers;
@@ -20,8 +20,8 @@ public class Calculator {
     public Calculator(float[] num){
         this(Operators.add,num);
     }
-    //this was replaced by tostring in enum
-    /*private String opString(Operators op){
+    /* //this was replaced by tostring in enum
+    private String opString(Operators op){
         switch (op){
             case add: return "+";
             case subtract: return "-";
@@ -32,12 +32,18 @@ public class Calculator {
             default: return "_";
         }
     }*/
-    private void Evaluate(){//todo handle /0 errors
+    private void Evaluate(){
+        //killing my switch here making it pretty
+        evaluated=numbers[0]; //doing this here stops /0 error
+        for(int i = 1; i<numbers.length-1;i++)
+            evaluated=operator.Evaluate(evaluated,numbers[i]);
+        evaluated=operator.Evaluate(evaluated,numbers[numbers.length-1]);
+        /*
         switch (operator){
             case add:
                 for(int i = 0; i<numbers.length-1;i++)
-                    evaluated+=numbers[i];
-                evaluated+=numbers[numbers.length-1];
+                    //evaluated+=numbers[i];
+                //evaluated+=numbers[numbers.length-1];
                 break;
             case subtract:
                 for(int i = 0; i<numbers.length-1;i++)
@@ -68,7 +74,7 @@ public class Calculator {
                     evaluated=(float)Math.pow(evaluated,numbers[i]);
                 evaluated=(float)Math.pow(evaluated,numbers[numbers.length-1]);
                 break;
-        }
+        }// */
         //System.out.println("evaluated: "+evaluated);
     }
     public String toString(){

@@ -1,0 +1,21 @@
+com/example/demo/Animals.java
+ com.example.demo.Animals
+com/example/demo/DemoApplication.java
+ com.example.demo.DemoApplication
+com/example/demo/AppPages.java
+ com.example.demo.AppPages
+com/example/demo/FormDataController.java
+ com.example.demo.FormDataController
+com/example/demo/FileManager.java
+ com.example.demo.FileManager
+com/example/demo/HomeController.java
+ com.example.demo.HomeController
+com/example/demo/Formfiller.java
+ com.example.demo.Formfiller
+com/example/demo/Calculator.java
+ com.example.demo.Calculator
+com/example/demo/Operators.java
+ com.example.demo.Operators
+ com.example.demo.Operators$1
+com/example/demo/MathService.java
+ com.example.demo.MathService

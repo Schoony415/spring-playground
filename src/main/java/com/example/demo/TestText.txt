@@ -29,7 +29,10 @@ From File:
     <li> /pi </li>
     <li> /volume/#/#/# </li>
     <li> /calculate *see math/ for options </li></ul>
-
+<li> /car </li>
+<ul><li> / </li>
+    <li> /drive </li>
+    <li> /walk </li></ul>
 </ul>
 
 

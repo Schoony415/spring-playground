@@ -76,7 +76,8 @@ public class MathService {
         }
 
         //return (""+args.toString()+":"+mycalc.toString());
-        return ("<html><body><table border=1><tr><td>Inputs</td><td nowrap> " +
+        return ("<html><body> All numbers calculated as float <br>" +
+                "<table border=1><tr><td>Inputs</td><td nowrap> " +
                 args.toString()+" </td></tr><tr><td>Outputs</td><td nowrap> " +
                 mycalc.toString()+" </td></tr></table></body></html>"
                 );

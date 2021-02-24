@@ -1,17 +1,25 @@
 package com.example.demo;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Map;
 
 @RestController
 @RequestMapping("/car")
 public class Formfiller {
     @GetMapping("/")
     public String carhome(){
-        return "info page";
+        return "car info page";
     }
 
+    @PostMapping("/drive")
+    public String formDataDriverExample(@RequestBody String car){
+        return "you are driving a "+car;
+    }
 
+    @PostMapping("/walk")
+    public String formDataWalkExample(@RequestParam Map<String,String> body){
+        return "The person walking is "+body.get("name")+".";
+    }
 
 }
