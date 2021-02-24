@@ -60,15 +60,15 @@ public class MathService {
             //i shouldn't need this switch state, i should be able to turn the string directly into the enum
             //valueof does replace the switch statement, but if something goes wrong idk what'll happen
             //without a default case, any wrong spelling gets to error page
-            mycalc = new Calculator(Calculator.operators.valueOf(args.get("operator").toLowerCase()),tempnums);
+            mycalc = new Calculator(Operators.valueOf(args.get("operator").toLowerCase()),tempnums);
             /*
             switch (args.get("operator").toLowerCase()){
-                case "add": mycalc = new Calculator(Calculator.operators.add, tempnums);break;
-                case "subtract": mycalc = new Calculator(Calculator.operators.subtract, tempnums);break;
-                case "multiply": mycalc = new Calculator(Calculator.operators.multiply, tempnums);break;
-                case "divide": mycalc = new Calculator(Calculator.operators.divide, tempnums);break;
-                case "modulo": mycalc = new Calculator(Calculator.operators.modulo, tempnums);break;
-                case "exponential": mycalc = new Calculator(Calculator.operators.exponential,tempnums);break;
+                case "add": mycalc = new Calculator(Operators.add, tempnums);break;
+                case "subtract": mycalc = new Calculator(Operators.subtract, tempnums);break;
+                case "multiply": mycalc = new Calculator(Operators.multiply, tempnums);break;
+                case "divide": mycalc = new Calculator(Operators.divide, tempnums);break;
+                case "modulo": mycalc = new Calculator(Operators.modulo, tempnums);break;
+                case "exponential": mycalc = new Calculator(Operators.exponential,tempnums);break;
                 default: mycalc=new Calculator(tempnums);break;
             }//*/
         }else{
@@ -80,8 +80,8 @@ public class MathService {
                 args.toString()+" </td></tr><tr><td>Outputs</td><td nowrap> " +
                 mycalc.toString()+" </td></tr></table></body></html>"
                 );
-        //return ("<table><tr> %s </tr><tr> %s </tr></table>",args.toString(),mycalc.toString());
-    }
+        //return String.format("<table><tr> %s </tr><tr> %s </tr></table>",args.toString(),mycalc.toString());
+    }//end of calculator method
 
     @GetMapping("/volume/{x}/{y}/{z}")
     public String cubicVolume(@PathVariable String x,@PathVariable String y,@PathVariable String z){

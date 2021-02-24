@@ -11,6 +11,9 @@ com/example/demo/HomeController.java
 com/example/demo/Calculator.java
  com.example.demo.Calculator
  com.example.demo.Calculator$1
- com.example.demo.Calculator$operators
+com/example/demo/Formfiller.java
+ com.example.demo.Formfiller
 com/example/demo/MathService.java
  com.example.demo.MathService
+com/example/demo/Operators.java
+ com.example.demo.Operators

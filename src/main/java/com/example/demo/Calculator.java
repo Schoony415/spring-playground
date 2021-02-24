@@ -1,26 +1,14 @@
 package com.example.demo;
 
 public class Calculator {
-    public enum operators{
-        add("+"),
-        subtract("-"),
-        multiply("*"),
-        divide("/"),
-        modulo("%"),
-        exponential("^")
-        ;
-        private String mysymbol;
-        private operators(String setstr){
-            this.mysymbol=setstr;
-        }
-        public String toString(){
-            return mysymbol;
-        }
-    }//end of enum
+    //this is old enum, I made it it's own file
+    /*public enum Operators{
+        add,subtract,multiply,divide,modulo,exponential
+    }//*/
     private float[] numbers;
-    private operators operator=operators.add;//default should help in problem cases
+    private Operators operator=Operators.add;//default should help in problem cases
     private float evaluated;
-    public Calculator(operators op, float[] num){
+    public Calculator(Operators op, float[] num){
         //System.out.println("constructor, argsin:"+op+num.toString());
         this.operator=op;
         //doing a deep copy
@@ -30,10 +18,10 @@ public class Calculator {
         this.Evaluate();
     }
     public Calculator(float[] num){
-        this(operators.add,num);
+        this(Operators.add,num);
     }
     //this was replaced by tostring in enum
-    /*private String opString(operators op){
+    /*private String opString(Operators op){
         switch (op){
             case add: return "+";
             case subtract: return "-";
@@ -44,7 +32,7 @@ public class Calculator {
             default: return "_";
         }
     }*/
-    private void Evaluate(){
+    private void Evaluate(){//todo handle /0 errors
         switch (operator){
             case add:
                 for(int i = 0; i<numbers.length-1;i++)
