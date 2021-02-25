@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -90,6 +91,30 @@ public class MathService {
         return ("The volume of a "+x+"x"+y+"x"+z+" rectangle is " +
                 (int)(Float.parseFloat(x)*Float.parseFloat(y)*Float.parseFloat(z))
                 );
+    }//end of calculator
+
+    @PostMapping("/area")
+    public String areaendpoint(@RequestBody MultiValueMap<String,String> bigBody){
+
+        if(bigBody.get("type").get(0).toLowerCase().compareTo("circle")==0){
+            //do circle things
+            float circarea = (float)(Math.PI*Math.pow(Float.parseFloat(bigBody.get("radius").get(0)),2));
+            //return "cicle area";
+            return "Area of a circle with a radius of "+ bigBody.get("radius").get(0) +" is "+circarea;
+        }
+        else if(bigBody.get("type").get(0).toLowerCase().compareTo("rectangle")==0){
+            //do rectangle things
+            float recarea = Float.parseFloat(bigBody.get("height").get(0))*Float.parseFloat(bigBody.get("width").get(0));
+            //return "rec area";
+            return "Area of a "+bigBody.get("width").get(0)+"x"+bigBody.get("height").get(0)+" rectangle is "+recarea;
+        }
+        else
+            return "need to pick a shape";
+        //return bigBody.toString();
     }
 
-}
+
+
+
+
+}//end of file
