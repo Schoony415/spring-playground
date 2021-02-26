@@ -6,7 +6,8 @@ public enum Operators {
     multiply("*"),
     divide("/"),
     modulo("%"),
-    exponential("^")
+    exponential("^"),
+    log("log")
     ;
     private String mysymbol;
     private Operators(String setstr){
@@ -25,8 +26,11 @@ public enum Operators {
                 try{ return num1%num2;}
                 catch(ArithmeticException e){return 0.0f;}
             case exponential: return (float)Math.pow(num1,num2);
+            case log:
+                try{ return (float)(Math.log(num1)/Math.log(num2));}
+                catch(ArithmeticException e){return 0.0f;}
+            default: return 0.0f;//should never be reached
         }
-        return 0.0f;//should never be reached
     }
 
 }//end of enum

@@ -13,11 +13,11 @@ public class MathService {
     public String mathHome(){
         return ("<html><body><p>" +
                 "All numbers calculated as floats" +
-                "<br>Current operators: add,subtract,multiply,divide,modulo,exponential" +
+                "<br>Current operators: add,subtract,multiply,divide,modulo,exponential,log" +
                 "<br>calculator?" +
-                "<br>&nbsp;&nbsp;&nbsp;operator=*&numbers=*,*,*" +
-                "<br>&nbsp;&nbsp;&nbsp;operator=*&x=*&y=*" +
-                "<br>&nbsp;&nbsp;&nbsp;numbers=*,*" +
+                "<br>"+"&nbsp;".repeat(5)+"operator=*&numbers=*,*,*" +
+                "<br>"+"&nbsp;".repeat(5)+"operator=*&x=*&y=*" +
+                "<br>"+"&nbsp;".repeat(5)+"numbers=*,*" +
                 "<br><br>/pi" +
                 "<br>/volume/*/*/*" +
                 "</p></body></html>");
