@@ -2,6 +2,8 @@ package com.example.springpractice;
 
 import org.springframework.web.bind.annotation.*;
 
+import java.io.File;
+
 @RestController
 public class HomeController {
     private int viewcount=0;
@@ -11,7 +13,7 @@ public class HomeController {
         System.out.println("Dear Diary: Look mom! Got a view!:"+viewcount);
         String mystring = "Default: Hello World!";
         //path to file on my computer without the file name
-        String path = "/Users/j2153034/Documents/GitHub/spring-playground/src/main/java/com/example/demo";
+        String path = "/Users/j2153034/Documents/GitHub/spring-playground/src/main/java/com/example/springpractice";
         //just my file name with the leading slash
         String filename = "/TestText.txt";
         mystring = FileManager.readFileAsString(path+filename);

@@ -33,6 +33,12 @@ From File:
 <ul><li> / </li>
     <li> /drive </li>
     <li> /walk </li></ul>
+
+<li> /ThemePark </li>
+<ul><li> / </li>
+    <li> /ride?name=String </li>
+    <li> /rides *pulls all the rides </li></ul>
+
 </ul>
 
 

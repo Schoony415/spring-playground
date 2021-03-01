@@ -1,10 +1,12 @@
-com/example/demo/DemoApplicationTests.java
- com.example.demo.DemoApplicationTests
-com/example/demo/FormDataControllerTest.java
- com.example.demo.FormDataControllerTest
-com/example/demo/HomeControllerTest.java
- com.example.demo.HomeControllerTest
 com/example/jsonpractice/SpringJavaDemoApplicationTests.java
  com.example.jsonpractice.SpringJavaDemoApplicationTests
+com/example/springpractice/FormDataControllerTest.java
+ com.example.springpractice.FormDataControllerTest
+com/example/springpractice/DemoApplicationTests.java
+ com.example.springpractice.DemoApplicationTests
+com/example/springpractice/HomeControllerTest.java
+ com.example.springpractice.HomeControllerTest
 com/example/jsonpractice/ThemeParkTests.java
  com.example.jsonpractice.ThemeParkTests
+com/example/jsonpractice/galvanizeExamplesTests.java
+ com.example.jsonpractice.galvanizeExamplesTests
