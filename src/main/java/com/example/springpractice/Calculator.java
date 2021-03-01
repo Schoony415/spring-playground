@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.springpractice;
 
 public class Calculator {
     /* //this is old enum, I made it it's own file

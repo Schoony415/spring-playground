@@ -1,10 +1,9 @@
-package com.example.demo;
+package com.example.springpractice;
 
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
-import java.util.Locale;
 
 @RestController
 @RequestMapping("/math")

@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.springpractice;
 
 import java.io.IOException;
 import java.nio.file.Files;

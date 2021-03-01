@@ -4,3 +4,7 @@ com/example/demo/FormDataControllerTest.java
  com.example.demo.FormDataControllerTest
 com/example/demo/HomeControllerTest.java
  com.example.demo.HomeControllerTest
+com/example/jsonpractice/SpringJavaDemoApplicationTests.java
+ com.example.jsonpractice.SpringJavaDemoApplicationTests
+com/example/jsonpractice/ThemeParkTests.java
+ com.example.jsonpractice.ThemeParkTests

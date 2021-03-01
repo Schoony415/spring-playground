@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.springpractice;
 
 public enum Operators {
     add("+"),

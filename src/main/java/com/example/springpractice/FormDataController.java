@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.springpractice;
 
 //import com.galvanize.RequestObjects.Search;
 import org.springframework.http.MediaType;

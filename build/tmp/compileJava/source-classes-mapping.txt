@@ -19,3 +19,9 @@ com/example/demo/MathService.java
 com/example/demo/Operators.java
  com.example.demo.Operators
  com.example.demo.Operators$1
+com/example/jsonpractice/ThemeParkController.java
+ com.example.jsonpractice.ThemeParkController
+com/example/jsonpractice/SpringJavaDemoApplication.java
+ com.example.jsonpractice.SpringJavaDemoApplication
+com/example/jsonpractice/Ride.java
+ com.example.jsonpractice.Ride
