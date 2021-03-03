@@ -1,8 +1,6 @@
 package com.example.jsonpractice;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
 import java.util.Date;
@@ -19,8 +17,8 @@ public class flightsEP {
    public Flight getflight(){
        Flight myflight = new Flight();
        myflight.setDepartsOn(new Date(2017-1900,3,21,13,34));
-       myflight.addPassenger(new Person("John Smith"));
-       myflight.addPassenger(new Person("Albert Einstein"));
+       myflight.addTickets(new tickets(100, new Person("John Smith")));
+       myflight.addTickets(new tickets(100, new Person("Albert","Einstein")));
        return myflight;
 
    }
@@ -36,20 +34,28 @@ public class flightsEP {
         flight1.setId(4);
         flight1.setDestination("London");
         flight1.setDepartsOn(new Date(2014 - 1900, 5, 8));
-        flight1.addPassenger(new Person("John"));
+        flight1.addTickets(new tickets(200, new Person("John")));
 
         Flight flight2 = new Flight();
         flight2.setId(4);
         flight2.setDestination("London");
-        flight2.setDepartsOn(new Date(2014 - 1900, 5, 8));
-        flight2.addPassenger(new Person("Albert Einstein"));
-        flight2.getTicks().setPrice(400);
+        flight2.setDepartsOn(new Date(2014 - 1900, 5, 9));
+        flight2.addTickets(new tickets(300, new Person("Albert Einstein")));
+        flight2.addTickets(new tickets(150, new Person("Marlyn Monroe")));
 
 
         return Arrays.asList(flight1, flight2);
     }
 
-
+    @PostMapping("/tickets/total")
+    public String ticketPaid(@RequestBody Flight myFlight){
+       List<tickets> these = myFlight.getTickets();
+       int paid = 0;
+       for(tickets stub:these){
+           paid+=stub.getPrice();
+       }
+       return ""+paid;
+    }
 
 }//end of file
 
@@ -127,5 +133,56 @@ cURL
 curl -i localhost:8080/flights/flight
 
 curl -i localhost:8080/flights
+
+ */
+
+/*
+Endpoint #1: Ticket Total
+In your spring-playground application, create an endpoint that:
+Takes a POST request to /flights/tickets/total with the following JSON:
+  {
+    "tickets": [
+      {
+        "passenger": {
+          "firstName": "Some name",
+          "lastName": "Some other name"
+        },
+        "price": 200
+      },
+      {
+        "passenger": {
+          "firstName": "Name B",
+          "lastName": "Name C"
+        },
+        "price": 150
+      }
+    ]
+  }
+And calculates the sum of the ticket prices, then renders it like so:
+{
+  "result": 350
+}
+Seeing it in Development
+You should be using @WebMvcTest to write tests for this. But you may also want to see it running in your dev environment. Here are a few options:
+cURL
+curl -X POST -H "Content-Type: application/json" -d '{
+  "tickets": [
+    {
+      "passenger": {
+        "firstName": "Some name",
+        "lastName": "Some other name"
+      },
+      "price": 200
+    },
+    {
+      "passenger": {
+        "firstName": "Name B",
+        "lastName": "Name C"
+      },
+      "price": 150
+    }
+  ]
+}
+' "http://localhost:8080/flights/tickets/total"
 
  */

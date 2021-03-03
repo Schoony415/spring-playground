@@ -1,0 +1,1 @@
+{"id":4,"destination":"London","departsOn":"2014-06-08 05:00","tickets":[{"price":200,"passenger":{"firstName":"John"}},{"price":300,"passenger":{"lastName":"Einstein","firstName":"Albert"}},{"price":150,"passenger":{"lastName":"Monroe","firstName":"Marlyn"}}]}

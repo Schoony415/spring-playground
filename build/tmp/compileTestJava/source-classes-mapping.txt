@@ -6,7 +6,9 @@ com/example/springpractice/DemoApplicationTests.java
  com.example.springpractice.DemoApplicationTests
 com/example/springpractice/HomeControllerTest.java
  com.example.springpractice.HomeControllerTest
-com/example/jsonpractice/ThemeParkTests.java
- com.example.jsonpractice.ThemeParkTests
 com/example/jsonpractice/galvanizeExamplesTests.java
  com.example.jsonpractice.galvanizeExamplesTests
+com/example/jsonpractice/ThemeParkTests.java
+ com.example.jsonpractice.ThemeParkTests
+com/example/jsonpractice/flighttest.java
+ com.example.jsonpractice.flighttest

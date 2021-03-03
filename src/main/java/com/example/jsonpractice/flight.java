@@ -11,15 +11,21 @@ class Flight {
     private int id;
     private String destination;
     private Date departsOn;
-    @JsonIgnore
-    private List<Person> passengers;
-    private tickets ticks;
+    //@JsonIgnore
+    //private List<Person> passengers;
+    @JsonAlias("tickets")
+    private List<tickets> ticks;
     private Person pilot;
 
-    public Flight(){
-        passengers = new ArrayList<>();
+    public Flight(List<tickets> InitialBoarding){
+        //passengers = new ArrayList<>();
         //passengers.add(new Person("John Smith"));
-        ticks = new tickets(200,passengers);
+        ticks = new ArrayList<>();
+        ticks = InitialBoarding;
+        //ticks.add(new tickets(200,new Person("Lady Debella")));
+    }
+    public Flight(){
+        ticks = new ArrayList<>();
     }
 
     public int getId() { return id; }
@@ -35,51 +41,30 @@ class Flight {
 
     public void setDepartsOn(Date dateTime) { this.departsOn = dateTime; }
 
-    public List<Person> getPassengers() { return passengers; }
+    //public List<Person> getPassengers() { return passengers; }
 
-    public void setPassengers(List<Person> passengers) { this.passengers = passengers; }
+    //public void setPassengers(List<Person> passengers) { this.passengers = passengers; }
 
-    public void addPassenger(Person passenger){
-        this.passengers.add(passenger);
-    }
+    //public void addPassenger(Person passenger){
+    //    this.passengers.add(passenger);
+    //}
 
     public Person getPilot() { return pilot; }
 
     public void setPilot(Person pilot) { this.pilot = pilot; }
 
-    public tickets getTicks() {
-        this.ticks.setOccupents(passengers);
+    public List<tickets> getTickets() {
+        //this.ticks.setOccupents(passengers);
         return ticks;
     }
 
-    public void setTicks(tickets ticks) {
+    //@JsonProperty("tickets")
+    public void setTickets(List<tickets> ticks) {
         this.ticks = ticks;
     }
 
-    //---------------------------------------
-    static class tickets{
-        private List<Person> occupents;
-        private int price;
-
-        public tickets(int price, List<Person> people){
-            this.price = price;
-            this.occupents = people;
-        }
-        @JsonProperty("passenger")
-        public List<Person> getOccupents() {
-            return occupents;
-        }
-
-        public void setOccupents(List<Person> occupents) {
-            this.occupents = occupents;
-        }
-
-        public int getPrice() {
-            return price;
-        }
-
-        public void setPrice(int price) {
-            this.price = price;
-        }
+    public void addTickets(tickets stub){
+        this.ticks.add(stub);
     }
+
 }
