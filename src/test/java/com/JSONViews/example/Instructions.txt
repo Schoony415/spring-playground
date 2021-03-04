@@ -1,0 +1,31 @@
+When the "Accept" header is set to application/vnd.galvanize.detailed+json the response should be:
+[
+  {
+    "userId": 1467,
+    "user": "someuser",
+    "email": "personal@example.com",
+    "date": "2017-04-02 01:32",
+    "statusText": "Just went snowboarding today!"
+  },
+  {
+    "userId": 98732,
+    "user": "otheruser",
+    "email": "otherprimary@example.com",
+    "date": "2017-04-02 01:32",
+    "statusText": "Great times!"
+  }
+]
+
+When the "Accept" header is set to application/vnd.galvanize.compact+json the response should be:
+[
+  {
+    "user": "someuser",
+    "date": "2017-04-02 01:32",
+    "statusText": "Just went snowboarding today!"
+  },
+  {
+    "user": "otheruser",
+    "date": "2017-04-02 01:32",
+    "statusText": "Great times!"
+  }
+]

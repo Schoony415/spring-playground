@@ -40,3 +40,21 @@ com/example/jsonpractice/flight.java
  com.example.jsonpractice.Flight
 com/example/jsonpractice/flightsEP.java
  com.example.jsonpractice.flightsEP
+com/example/Activities/example/Views.java
+ com.example.Activities.example.Views
+ com.example.Activities.example.Views$Compact
+ com.example.Activities.example.Views$Detailed
+com/example/Activities/Activities/User.java
+ com.example.Activities.Activities.User
+com/example/Activities/Activities/Email.java
+ com.example.Activities.Activities.Email
+com/example/Activities/example/EndPoints.java
+ com.example.Activities.example.EndPoints
+com/example/Activities/Activities/Post.java
+ com.example.Activities.Activities.Post
+com/example/Activities/Activities/Status.java
+ com.example.Activities.Activities.Status
+com/example/Activities/Activities/Activities.java
+ com.example.Activities.Activities.Activities
+com/example/Activities/example/Application.java
+ com.example.Activities.example.Application

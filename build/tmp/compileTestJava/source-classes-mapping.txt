@@ -12,3 +12,7 @@ com/example/jsonpractice/ThemeParkTests.java
  com.example.jsonpractice.ThemeParkTests
 com/example/jsonpractice/flighttest.java
  com.example.jsonpractice.flighttest
+com/example/Activities/example/FileManager.java
+ com.example.Activities.example.FileManager
+com/example/Activities/example/ConversionTest.java
+ com.example.Activities.example.ConversionTest
