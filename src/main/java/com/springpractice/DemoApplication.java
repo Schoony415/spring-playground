@@ -1,6 +1,6 @@
 package com.springpractice;
 
-import com.example.jsonpractice.*;
+import com.jsonpractice.*;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

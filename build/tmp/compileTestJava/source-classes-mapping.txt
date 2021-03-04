@@ -1,18 +1,18 @@
-com/example/jsonpractice/SpringJavaDemoApplicationTests.java
- com.example.jsonpractice.SpringJavaDemoApplicationTests
-com/example/springpractice/FormDataControllerTest.java
- com.example.springpractice.FormDataControllerTest
-com/example/springpractice/DemoApplicationTests.java
- com.example.springpractice.DemoApplicationTests
-com/example/springpractice/HomeControllerTest.java
- com.example.springpractice.HomeControllerTest
-com/example/jsonpractice/galvanizeExamplesTests.java
- com.example.jsonpractice.galvanizeExamplesTests
-com/example/jsonpractice/ThemeParkTests.java
- com.example.jsonpractice.ThemeParkTests
-com/example/jsonpractice/flighttest.java
- com.example.jsonpractice.flighttest
-com/example/Activities/example/FileManager.java
- com.example.Activities.example.FileManager
-com/example/Activities/example/ConversionTest.java
- com.example.Activities.example.ConversionTest
+com/JSONViews/example/ConversionTest.java
+ com.JSONViews.example.ConversionTest
+com/JSONViews/example/FileManager.java
+ com.JSONViews.example.FileManager
+com/jsonpractice/galvanizeExamplesTests.java
+ com.jsonpractice.galvanizeExamplesTests
+com/jsonpractice/ThemeParkTests.java
+ com.jsonpractice.ThemeParkTests
+com/jsonpractice/flighttest.java
+ com.jsonpractice.flighttest
+com/springpractice/FormDataControllerTest.java
+ com.springpractice.FormDataControllerTest
+com/springpractice/DemoApplicationTests.java
+ com.springpractice.DemoApplicationTests
+com/springpractice/HomeControllerTest.java
+ com.springpractice.HomeControllerTest
+com/jsonpractice/SpringJavaDemoApplicationTests.java
+ com.jsonpractice.SpringJavaDemoApplicationTests

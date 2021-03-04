@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.jsonpractice.galvanizeExamplesTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-03-04T15:19:20" hostname="RGCAFCS82020.local" time="0.146">
+  <properties/>
+  <testcase name="testArray()" classname="com.jsonpractice.galvanizeExamplesTests" time="0.106"/>
+  <testcase name="testmain()" classname="com.jsonpractice.galvanizeExamplesTests" time="0.016"/>
+  <testcase name="testObject()" classname="com.jsonpractice.galvanizeExamplesTests" time="0.021"/>
+  <system-out><![CDATA[2021-03-04 09:19:19.924  INFO 52273 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.jsonpractice.galvanizeExamplesTests], using SpringBootContextLoader
+2021-03-04 09:19:19.925  INFO 52273 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.jsonpractice.galvanizeExamplesTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-03-04 09:19:19.926  INFO 52273 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.jsonpractice.galvanizeExamplesTests]: galvanizeExamplesTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-03-04 09:19:19.937  INFO 52273 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.jsonpractice.SpringJavaDemoApplication for test class com.jsonpractice.galvanizeExamplesTests
+2021-03-04 09:19:19.939  INFO 52273 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-03-04 09:19:19.941  INFO 52273 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@9ac65d5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6bb1f883, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@44acd9f0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@31a27e3d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5bca2711, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3f5bb90b, org.springframework.test.context.event.EventPublishingTestExecutionListener@1d1a9449, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3feb4241, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@35131802, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@57e26c4a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1e130223, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7b8fb2ea, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@56f16691]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.3)
+
+2021-03-04 09:19:19.973  INFO 52273 --- [    Test worker] com.jsonpractice.galvanizeExamplesTests  : Starting galvanizeExamplesTests using Java 15.0.1 on RGCAFCS82020.local with PID 52273 (started by j2153034 in /Users/j2153034/Documents/GitHub/spring-playground)
+2021-03-04 09:19:19.973  INFO 52273 --- [    Test worker] com.jsonpractice.galvanizeExamplesTests  : No active profile set, falling back to default profiles: default
+2021-03-04 09:19:20.153  INFO 52273 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-04 09:19:20.279  INFO 52273 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-03-04 09:19:20.280  INFO 52273 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-03-04 09:19:20.281  INFO 52273 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2021-03-04 09:19:20.296  INFO 52273 --- [    Test worker] com.jsonpractice.galvanizeExamplesTests  : Started galvanizeExamplesTests in 0.352 seconds (JVM running for 6.655)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

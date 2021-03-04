@@ -3,7 +3,7 @@ package com.JSONViews.example;
 import com.JSONViews.Activities.Activities;
 import com.JSONViews.Activities.Email;
 import com.JSONViews.Activities.Post;
-import com.example.JSONViews.Activities.*;
+import com.JSONViews.Activities.*;
 
 import com.fasterxml.jackson.annotation.JsonView;
 import org.springframework.web.bind.annotation.*;

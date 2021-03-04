@@ -1,60 +1,60 @@
-com/example/springpractice/FileManager.java
- com.example.springpractice.FileManager
-com/example/Application.java
- com.example.Application
-com/example/springpractice/AppPages.java
- com.example.springpractice.AppPages
-com/example/springpractice/MathService.java
- com.example.springpractice.MathService
-com/example/jsonpractice/galvanizeExamples.java
- com.example.jsonpractice.galvanizeExamples
- com.example.jsonpractice.galvanizeExamples$Person
-com/example/jsonpractice/ThemeParkController.java
- com.example.jsonpractice.ThemeParkController
-com/example/jsonpractice/SpringJavaDemoApplication.java
- com.example.jsonpractice.SpringJavaDemoApplication
-com/example/springpractice/Operators.java
- com.example.springpractice.Operators
- com.example.springpractice.Operators$1
-com/example/springpractice/Animals.java
- com.example.springpractice.Animals
-com/example/jsonpractice/tickets.java
- com.example.jsonpractice.tickets
-com/example/jsonpractice/Ride.java
- com.example.jsonpractice.Ride
-com/example/jsonpractice/Suitecase.java
- com.example.jsonpractice.Suitcase
-com/example/springpractice/FormDataController.java
- com.example.springpractice.FormDataController
-com/example/jsonpractice/Person.java
- com.example.jsonpractice.Person
-com/example/springpractice/Formfiller.java
- com.example.springpractice.Formfiller
-com/example/springpractice/DemoApplication.java
- com.example.springpractice.DemoApplication
-com/example/springpractice/HomeController.java
- com.example.springpractice.HomeController
-com/example/springpractice/Calculator.java
- com.example.springpractice.Calculator
-com/example/jsonpractice/flight.java
- com.example.jsonpractice.Flight
-com/example/jsonpractice/flightsEP.java
- com.example.jsonpractice.flightsEP
-com/example/Activities/example/Views.java
- com.example.Activities.example.Views
- com.example.Activities.example.Views$Compact
- com.example.Activities.example.Views$Detailed
-com/example/Activities/Activities/User.java
- com.example.Activities.Activities.User
-com/example/Activities/Activities/Email.java
- com.example.Activities.Activities.Email
-com/example/Activities/example/EndPoints.java
- com.example.Activities.example.EndPoints
-com/example/Activities/Activities/Post.java
- com.example.Activities.Activities.Post
-com/example/Activities/Activities/Status.java
- com.example.Activities.Activities.Status
-com/example/Activities/Activities/Activities.java
- com.example.Activities.Activities.Activities
-com/example/Activities/example/Application.java
- com.example.Activities.example.Application
+com/jsonpractice/galvanizeExamples.java
+ com.jsonpractice.galvanizeExamples
+ com.jsonpractice.galvanizeExamples$Person
+com/jsonpractice/flightsEP.java
+ com.jsonpractice.flightsEP
+com/JSONViews/example/Application.java
+ com.JSONViews.example.Application
+com/springpractice/FileManager.java
+ com.springpractice.FileManager
+com/jsonpractice/flight.java
+ com.jsonpractice.Flight
+com/jsonpractice/ThemeParkController.java
+ com.jsonpractice.ThemeParkController
+com/JSONViews/Activities/Email.java
+ com.JSONViews.Activities.Email
+com/jsonpractice/SpringJavaDemoApplication.java
+ com.jsonpractice.SpringJavaDemoApplication
+com/JSONViews/Activities/Post.java
+ com.JSONViews.Activities.Post
+com/springpractice/AppPages.java
+ com.springpractice.AppPages
+com/jsonpractice/tickets.java
+ com.jsonpractice.tickets
+com/JSONViews/example/Views.java
+ com.JSONViews.example.Views
+ com.JSONViews.example.Views$Compact
+ com.JSONViews.example.Views$Detailed
+com/jsonpractice/Suitecase.java
+ com.jsonpractice.Suitcase
+com/JSONViews/Activities/User.java
+ com.JSONViews.Activities.User
+com/springpractice/HomeController.java
+ com.springpractice.HomeController
+com/JSONViews/Activities/Activities.java
+ com.JSONViews.Activities.Activities
+com/jsonpractice/Ride.java
+ com.jsonpractice.Ride
+com/springpractice/Formfiller.java
+ com.springpractice.Formfiller
+com/JSONViews/Activities/Status.java
+ com.JSONViews.Activities.Status
+com/springpractice/MathService.java
+ com.springpractice.MathService
+com/springpractice/DemoApplication.java
+ com.springpractice.DemoApplication
+com/JSONViews/example/EndPoints.java
+ com.JSONViews.example.EndPoints
+com/springpractice/Animals.java
+ com.springpractice.Animals
+com/Application.java
+ com.Application
+com/springpractice/FormDataController.java
+ com.springpractice.FormDataController
+com/jsonpractice/Person.java
+ com.jsonpractice.Person
+com/springpractice/Operators.java
+ com.springpractice.Operators
+ com.springpractice.Operators$1
+com/springpractice/Calculator.java
+ com.springpractice.Calculator
