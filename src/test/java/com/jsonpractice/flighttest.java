@@ -121,7 +121,7 @@ public class flighttest {
     public void testTickets3() throws Exception{
         String jsonstr =
                 FileManager.readFileAsString(
-                        "src/test/java/com/example/jsonpractice/myFlight.txt"
+                        "src/test/java/com/jsonpractice/myFlight.txt"
                 );
 
         String addressin =

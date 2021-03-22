@@ -33,7 +33,8 @@ public class FormDataControllerTest {
     public void testCreateComment() throws Exception {
         String content = String.valueOf(new Random().nextInt());
 
-        MockHttpServletRequestBuilder request1 = post("/comments")
+        MockHttpServletRequestBuilder request1 =
+                post("/rb/map-example")
                 .contentType(MediaType.APPLICATION_FORM_URLENCODED)
                 .param("content", content)
                 .param("author", "Dwayne");

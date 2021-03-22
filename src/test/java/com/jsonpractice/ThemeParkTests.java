@@ -35,7 +35,7 @@ public class ThemeParkTests {
             .andExpect(status().isOk())//returns 200
             .andExpect(content().contentType(MediaType.APPLICATION_JSON))
             //returns the json key that is name and value that is ridename
-            .andExpect(jsonPath("$.name",is(ridename)))
+            .andExpect(jsonPath("$.name",is(ridename.replaceAll("%20"," "))))
         ;
     }
 

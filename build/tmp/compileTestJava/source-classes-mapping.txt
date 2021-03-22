@@ -1,18 +1,22 @@
-com/JSONViews/example/ConversionTest.java
- com.JSONViews.example.ConversionTest
+com/sqlPG/ControllerTest.java
+ com.sqlPG.ControllerTest
 com/JSONViews/example/FileManager.java
  com.JSONViews.example.FileManager
 com/jsonpractice/galvanizeExamplesTests.java
  com.jsonpractice.galvanizeExamplesTests
-com/jsonpractice/ThemeParkTests.java
- com.jsonpractice.ThemeParkTests
 com/jsonpractice/flighttest.java
  com.jsonpractice.flighttest
-com/springpractice/FormDataControllerTest.java
- com.springpractice.FormDataControllerTest
-com/springpractice/DemoApplicationTests.java
- com.springpractice.DemoApplicationTests
+com/JSONViews/example/ConversionTest.java
+ com.JSONViews.example.ConversionTest
 com/springpractice/HomeControllerTest.java
  com.springpractice.HomeControllerTest
+com/sqlPG/SqlPgApplicationTests.java
+ com.sqlPG.SqlPgApplicationTests
+com/springpractice/DemoApplicationTests.java
+ com.springpractice.DemoApplicationTests
+com/jsonpractice/ThemeParkTests.java
+ com.jsonpractice.ThemeParkTests
 com/jsonpractice/SpringJavaDemoApplicationTests.java
  com.jsonpractice.SpringJavaDemoApplicationTests
+com/springpractice/FormDataControllerTest.java
+ com.springpractice.FormDataControllerTest

@@ -3,10 +3,16 @@ com/jsonpractice/galvanizeExamples.java
  com.jsonpractice.galvanizeExamples$Person
 com/jsonpractice/flightsEP.java
  com.jsonpractice.flightsEP
+com/sqlPG/Model/Lesson.java
+ com.sqlPG.Model.Lesson
+com/sqlPG/DAO/LessonRepository.java
+ com.sqlPG.DAO.LessonRepository
 com/JSONViews/example/Application.java
  com.JSONViews.example.Application
 com/springpractice/FileManager.java
  com.springpractice.FileManager
+com/JSONViews/example/prettiefi.java
+ com.JSONViews.example.prettiefi
 com/jsonpractice/flight.java
  com.jsonpractice.Flight
 com/jsonpractice/ThemeParkController.java
@@ -45,16 +51,20 @@ com/springpractice/DemoApplication.java
  com.springpractice.DemoApplication
 com/JSONViews/example/EndPoints.java
  com.JSONViews.example.EndPoints
+com/springpractice/Calculator.java
+ com.springpractice.Calculator
 com/springpractice/Animals.java
  com.springpractice.Animals
 com/Application.java
  com.Application
-com/springpractice/FormDataController.java
- com.springpractice.FormDataController
+com/sqlPG/SqlPgApplication.java
+ com.sqlPG.SqlPgApplication
 com/jsonpractice/Person.java
  com.jsonpractice.Person
 com/springpractice/Operators.java
  com.springpractice.Operators
  com.springpractice.Operators$1
-com/springpractice/Calculator.java
- com.springpractice.Calculator
+com/sqlPG/Controller/LessonController.java
+ com.sqlPG.Controller.LessonController
+com/springpractice/FormDataController.java
+ com.springpractice.FormDataController

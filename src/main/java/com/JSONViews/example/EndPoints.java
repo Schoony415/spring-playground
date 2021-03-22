@@ -13,6 +13,7 @@ import java.util.HashMap;
 import java.util.List;
 
 @RestController
+@RequestMapping("/jsonviews")
 public class EndPoints {
 
     @GetMapping("/")
@@ -31,15 +32,43 @@ public class EndPoints {
     @PostMapping(value = "/activities/simplify",
             produces = "application/vnd.galvanize.detailed+json")
     @JsonView(Views.Detailed.class)
-    public List<Post> getUsersV1l(@RequestBody Activities input) {
-        return input.getActivities();
+    public List<prettiefi> getUsersV1l(@RequestBody Activities input) {
+        List<prettiefi> output = new ArrayList<>();
+        for(Post p : input.getActivities()){
+            Email pemail = new Email();
+            for(Email e: p.getUser().getEmails())
+                if(e.isPrimary())
+                    pemail = e;
+            output.add(new prettiefi(
+                    p.getUser().getId(),
+                    p.getUser().getUsername(),
+                    pemail.getAddress(),
+                    p.getStatus().getDate(),
+                    p.getStatus().getText()
+            ));
+        }
+        return output;
     }
 
     @PostMapping(value = "/activities/simplify",
             produces = "application/vnd.galvanize.compact+json")
     @JsonView(Views.Compact.class)
-    public List<Post> getUsersV2l(@RequestBody Activities input) {
-        return input.getActivities();
+    public List<prettiefi> getUsersV2l(@RequestBody Activities input) {
+        List<prettiefi> output = new ArrayList<>();
+        for(Post p : input.getActivities()){
+            Email pemail = new Email();
+            for(Email e: p.getUser().getEmails())
+                if(e.isPrimary())
+                    pemail = e;
+            output.add(new prettiefi(
+                    p.getUser().getId(),
+                    p.getUser().getUsername(),
+                    pemail.getAddress(),
+                    p.getStatus().getDate(),
+                    p.getStatus().getText()
+            ));
+        }
+        return output;
     }
 
     @PostMapping(value = "/activities/simplify/a",

@@ -18,7 +18,8 @@ public class FormDataController {
 
     @PostMapping(value = "/map-example", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
     public String getMapParams(@RequestParam Map<String, String> formData) {
-        return formData.toString();
+        //return formData.toString();
+        return String.format("%s said %s!", formData.get("author"),formData.get("content"));
     }
 
     //@PostMapping(value = "/object-example", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
